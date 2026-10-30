@@ -122,6 +122,8 @@ Eintrag für genau diese WHGame.dll; die Vorlage dafür liegt in
 - `tools/find_genv.py` – findet `gEnv` über den CSystem-Konstruktor
 - `tools/probe_identity.py` – misst, welche Identitätsfelder der Launcher vergleicht
 - `CHECKSUMS.txt` – SHA-256 der Quelldateien und dieses Pakets
+- `LICENSE` (MIT) und `NOTICE` – Lizenz des eigenen Codes; `NOTICE` hält fest, dass keine
+  Dateien von KCD:MP, Warhorse oder Deep Silver enthalten sind
 
 ## Rückmeldung
 

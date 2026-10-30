@@ -1,0 +1,22 @@
+NOTICE
+======
+
+This repository contains no files, code, assets or binaries from KCD:MP,
+Kingdom Come: Deliverance II, Warhorse Studios or Deep Silver. It ships only
+scripts, documentation and one derived data file.
+
+The build entry in `gog-1.5.6-c59754b9.json` was derived independently from a
+legally owned GOG copy of the game. It contains addresses (RVAs) of functions
+in that copy; addresses are facts, not copied works. No original `builds.json`
+and no `WHGame.dll` is redistributed.
+
+`install.ps1` changes only the user's own `builds.json` next to their
+`KcdMp_client.dll`. It does not modify, patch or redistribute any game or mod
+binary. It does not bypass server access control, anti-cheat or identity
+checks; it only teaches the client which game build it runs on.
+
+KCD:MP is a fan project of its authors; Kingdom Come: Deliverance II and its
+assets belong to Warhorse Studios / Deep Silver. This repository is not
+affiliated with or endorsed by any of them.
+
+Use at your own risk. See LICENSE (MIT) for the code in this repository.

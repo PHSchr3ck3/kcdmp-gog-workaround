@@ -100,6 +100,13 @@ The derivation scripts live in [`tools/`](tools/), the full report in
 No game files, no KCD:MP binaries, no server code. Nothing here bypasses server access
 control, anti-cheat or identity checks; it only teaches the client its own game build.
 
+## License
+
+The code in this repository is **MIT** licensed (see [LICENSE](LICENSE)). [NOTICE](NOTICE)
+records that no files or code from KCD:MP, Warhorse Studios or Deep Silver are included:
+the addresses were derived independently from a legally owned GOG copy, and no binaries are
+redistributed.
+
 ## Disclaimer
 
 Fan-made workaround, not affiliated with Warhorse Studios, Deep Silver or the KCD:MP team.

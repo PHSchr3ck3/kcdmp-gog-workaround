@@ -70,6 +70,13 @@ Schritt für Schritt mit Fehlerbehebung: **[ANLEITUNG.de.md](ANLEITUNG.de.md)**
 - Ein KCD:MP-Update kann `builds.json` ersetzen → `install.ps1` erneut ausführen.
 - Nicht getestet: längere Sitzungen, Kampf, Inventar, Levelwechsel, mehrere Spieler.
 
+## Lizenz
+
+Der Code in diesem Repository steht unter **MIT** (siehe [LICENSE](LICENSE)).
+[NOTICE](NOTICE) hält fest, dass hier keine Dateien oder Code von KCD:MP, Warhorse
+Studios oder Deep Silver liegen: die Adressen wurden unabhängig aus einer eigenen
+GOG-Spielkopie hergeleitet, es werden keine Binärdateien weitergegeben.
+
 ## Kein offizieller Support
 
 Fan-Arbeit, nicht mit Warhorse Studios, Deep Silver oder dem KCD:MP-Team verbunden.
