@@ -1,0 +1,20 @@
+# game and mod binaries are never part of this repository
+*.dll
+*.exe
+*.pdb
+*.zip
+
+# local builds table and its backups (generated from the user's own files)
+builds.json
+builds.json.*.bak
+
+# mod assets
+cef/
+ui/
+web/
+
+# python
+__pycache__/
+*.pyc
+tools/pylibs/
+tools/wheels/

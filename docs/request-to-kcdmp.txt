@@ -1,0 +1,42 @@
+KCD:MP 0.48.1 – Bitte um Unterstuetzung des GOG-Builds (Kingdom Come: Deliverance II 1.5.x, GOG)
+
+Stand 30.10.2026. Der Build-Check laesst sich lokal umgehen, aber 247 der 548 Anker
+lassen sich ohne die Original-Muster nicht belegen. Deshalb diese Anfrage.
+
+1. Spiel-Build
+   WHGame.dll   sha256 c59754b925c669b26c46723eb6c19c3217aba2fac94a1ad2d8bcc229d9363870
+                size 89078272, timestamp 1782121515, size_of_image 95490048,
+                pdb_guid 4B3F7D2D4D22434DA6CA550A88ED0D8C, pdb_age 2
+                Bin\Win64MasterMasterGogPGO\WHGame.dll
+   KingdomCome.exe sha256 2e4c3189f32cc8d2a1a768eaf54754079d3ec90dac563b392dbd6cad9ea4e63b
+                size 1525760
+   Build-Info   Jun 22 2026 11:18:47, MasterMasterGogPGO, release_1_5_1308617_68
+   Store        GOG (Galaxy), Windows 11
+
+2. Was der Client meldet (client.log, 0.48.1)
+   build gate: unknown game build (timestamp 1782121515, pdb 4B3F7D2D4D22434DA6CA550A88ED0D8C)
+   self-test: the table of supported game builds inside the DLL holds 3 build(s)
+
+3. Was hier belegt wurde
+   - Der Launcher vergleicht Timestamp + SizeOfImage (--check-game: PDB/SHA-256 sind
+     egal). Ein Eintrag mit den obigen Werten wird als "supported" akzeptiert.
+   - Der Client liest builds.json neben KcdMp_client.dll. Ein eigener Eintrag mit
+     277 Ankern (73 rtti, 197 slot/pattern_slot/string_slot, 2 export, 4 runtime,
+     1 ctor_data/gEnv) laesst das Gate durch, der Engine-Boot laeuft
+     (gEnv 0x4917800, "matches the gEnv anchor"; 21 Hooks; Verbindung zum Server
+     und Server-Login funktionieren).
+   - Es fehlen 247 pattern-Anker (die Byte-Muster stehen nicht im Client) sowie
+     23 slot- und 1 rtti-Anker. Diese Funktionen bleiben aus.
+
+4. Bitte
+   - Bitte einen "gog"-Eintrag fuer genau diese WHGame.dll mit
+     tools/sigscan/sigscan.py erzeugen (alle 548 Anker) und in builds.json
+     aufnehmen, oder
+   - tools/sigscan/sigscan.py samt Mustern bereitstellen, damit der Eintrag hier
+     reproduzierbar erzeugt werden kann.
+   Ein Eintrag nur mit den 277 herleitbaren Ankern ist kein vollwertiger Support.
+
+5. Beilage
+   tools/gog_anchors.json enthaelt alle 277 hergeleiteten Anker mit Methode und
+   Vtable/Slot; docs/TECHNICAL.de.md beschreibt die Herleitung und die offenen
+   23/247 Anker. Auf Wunsch liefere ich die vollstaendige builds.json.
