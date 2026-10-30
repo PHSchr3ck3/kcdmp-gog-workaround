@@ -85,7 +85,8 @@ no backup exists. The client DLL is never touched.
 
 ## How the entry was derived
 
-See [`docs/TECHNICAL.de.md`](docs/TECHNICAL.de.md) (German). Summary:
+See [`docs/TECHNICAL.md`](docs/TECHNICAL.md) (English; German:
+[`docs/TECHNICAL.de.md`](docs/TECHNICAL.de.md)). Summary:
 
 - RTTI type names → `RTTICompleteObjectLocator` → vtable; 73 of 74 classes matched with the
   exact slot count of the reference build.
@@ -105,7 +106,8 @@ The derivation scripts live in [`tools/`](tools/), the full report in
 - `gog-1.5.6-c59754b9.json` — the builds entry (277 anchors)
 - English: this file · German: [`README.de.md`](README.de.md) and
   [`ANLEITUNG.de.md`](ANLEITUNG.de.md)
-- [`docs/TECHNICAL.de.md`](docs/TECHNICAL.de.md), [`docs/request-to-kcdmp.txt`](docs/request-to-kcdmp.txt)
+- [`docs/TECHNICAL.md`](docs/TECHNICAL.md) (English) / [`docs/TECHNICAL.de.md`](docs/TECHNICAL.de.md) (German),
+  [`docs/request-to-kcdmp.txt`](docs/request-to-kcdmp.txt)
   (English; German: [`docs/request-to-kcdmp.de.txt`](docs/request-to-kcdmp.de.txt))
 - `tools/` — read-only derivation scripts and their report
 - `CHECKSUMS.txt`, `LICENSE`, `NOTICE`

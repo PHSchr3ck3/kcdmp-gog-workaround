@@ -118,7 +118,8 @@ Eintrag für genau diese WHGame.dll; die Vorlage dafür liegt in
 - `gog-1.5.6-c59754b9.json` – der Eintrag (277 Anker)
 - `ANLEITUNG.de.md` – Schritt-für-Schritt-Anleitung mit Fehlerbehebung
 - `README.md` (englisch, Startseite) und `README.de.md` (deutsch, ausführlich)
-- `docs/TECHNICAL.de.md` – Herleitung, Zahlen, Befehle, offene Punkte
+- `docs/TECHNICAL.de.md` – Herleitung, Zahlen, Befehle, offene Punkte (englisch:
+  `docs/TECHNICAL.md`)
 - `docs/request-to-kcdmp.de.txt` – fertige Anfrage an das KCD:MP-Team
 - `tools/rtti_derive.py` – leitet RTTI-Vtables, Slots, Exporte, gEnv aus WHGame.dll ab
 - `tools/find_genv.py` – findet `gEnv` über den CSystem-Konstruktor
