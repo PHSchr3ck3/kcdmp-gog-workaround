@@ -1,5 +1,7 @@
 # Anleitung – KCD:MP 0.48.1 mit KCD2 von GOG
 
+**English:** [README.md](README.md) · **Status/Grenzen:** [README.de.md](README.de.md)
+
 Schritt für Schritt. Alle Befehle sind zum Kopieren; Pfade bitte anpassen, wenn dein
 Mod- oder Spielordner anders heißt.
 

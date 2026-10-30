@@ -1,5 +1,7 @@
 # KCD:MP 0.48.1 mit der GOG-Version von KCD2 1.5.x
 
+**English:** [README.md](README.md) · **Anleitung:** [ANLEITUNG.de.md](ANLEITUNG.de.md)
+
 **Stand:** 30.10.2026, getestet mit KCD:MP 0.48.1 (Originaldateien unverändert),
 Kingdom Come: Deliverance II GOG `release_1_5_1308617_68`, WHGame.dll
 `c59754b9…d9363870` (89.078.272 Byte, Timestamp 1782121515, SizeOfImage 95490048,
@@ -115,7 +117,7 @@ Eintrag für genau diese WHGame.dll; die Vorlage dafür liegt in
 - `install.ps1`, `uninstall.ps1` – Ein-/Ausbau des Eintrags, Sicherung, Hash-Prüfung
 - `gog-1.5.6-c59754b9.json` – der Eintrag (277 Anker)
 - `ANLEITUNG.de.md` – Schritt-für-Schritt-Anleitung mit Fehlerbehebung
-- `README.md` (deutsch, kurz) und `README.en.md` (englisch)
+- `README.md` (englisch, Startseite) und `README.de.md` (deutsch, ausführlich)
 - `docs/TECHNICAL.de.md` – Herleitung, Zahlen, Befehle, offene Punkte
 - `docs/request-to-kcdmp.txt` – fertige Anfrage an das KCD:MP-Team
 - `tools/rtti_derive.py` – leitet RTTI-Vtables, Slots, Exporte, gEnv aus WHGame.dll ab
