@@ -6,10 +6,10 @@ von GOG** (1.5.x). Der Eintrag `gog-1.5.6-c59754b9` wird in `builds.json` neben
 
 > **Teilweiser Fix, kein offizieller GOG-Support.** Das Build-Gate lässt durch, die Engine
 > startet, Hooks werden installiert und der Client verbindet sich. Von 548 Ankern sind aber
-> nur **277 herleitbar**; die **247 Pattern-Anker** aus KCD:MPs `sigscan` lassen sich ohne die
-> Byte-Muster nicht rekonstruieren. Der Client meldet jeden fehlenden Anker im Log und
-> schaltet die passende Funktion ab – auch einige Absturz-Fänger. Details unter
-> [Grenzen](#grenzen).
+> nur **277 hergeleitet** – es fehlen **271**: **247 Pattern-Anker** (aus KCD:MPs `sigscan`,
+> ohne die Byte-Muster nicht rekonstruierbar), 23 Slot-Anker und 1 RTTI-Anker. Der Client
+> meldet jeden fehlenden Anker im Log und schaltet die passende Funktion ab – auch einige
+> Absturz-Fänger. Details unter [Grenzen](#grenzen).
 
 Die KCD:MP-FAQ sagt selbst: *„The GOG version needs its own build of KCD:MP, and it may come
 later."* Für einen vollständigen Fix muss das KCD:MP-Team den Eintrag mit

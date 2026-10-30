@@ -13,7 +13,8 @@ ergänzt den GOG-Build als **vierten Eintrag in `builds.json`**. Weder
 beim Start aus `builds.json` neben der DLL (Log: `build gate: the entry comes from
 builds.json next to KcdMp_client.dll`).
 
-Der Eintrag `gog-1.5.6-c59754b9` enthält **277 von 548 Ankern**. Die 247 Anker, die
+Der Eintrag `gog-1.5.6-c59754b9` enthält **277 von 548 Ankern**. Es fehlen **271**:
+**247 Pattern-Anker**, 23 Slot-Anker und 1 RTTI-Anker. Die 247 Anker, die
 das Originalwerkzeug `tools/sigscan/sigscan.py` über Byte-Muster gefunden hat, sind
 nicht herleitbar: die Muster stehen nicht im Client, und auf dem Rechner liegt kein
 zweiter WHGame.dll-Build als Vergleich. Diese 247 Anker fehlen daher; der Client

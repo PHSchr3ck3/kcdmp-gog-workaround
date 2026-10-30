@@ -9,10 +9,10 @@ binary is modified** — the client reads the table from that file at startup.
 
 > **This is a partial fix, not official GOG support.** The build gate passes, the engine
 > boots, hooks install and the client connects to a server. But only **277 of 548 anchors**
-> could be derived from the GOG `WHGame.dll`; the **247 anchors that KCD:MP's `sigscan`
-> found by byte pattern cannot be reconstructed** (the patterns are not in the client).
-> The client logs each missing anchor and turns the matching feature off — including some
-> crash guards. See *Limitations* below.
+> are derived — **271 are missing**: **247 `pattern` anchors** (found by KCD:MP's `sigscan`
+> from byte patterns that are not shipped), 23 slot anchors and 1 RTTI anchor. The client
+> logs each missing anchor and turns the matching feature off — including some crash guards.
+> See *Limitations* below.
 
 The KCD:MP FAQ says: *"The GOG version needs its own build of KCD:MP, and it may come later."*
 For a complete fix the KCD:MP team has to generate the entry with `tools/sigscan/sigscan.py`;
