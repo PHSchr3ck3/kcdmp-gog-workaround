@@ -113,6 +113,8 @@ Eintrag für genau diese WHGame.dll; die Vorlage dafür liegt in
 
 - `install.ps1`, `uninstall.ps1` – Ein-/Ausbau des Eintrags, Sicherung, Hash-Prüfung
 - `gog-1.5.6-c59754b9.json` – der Eintrag (277 Anker)
+- `ANLEITUNG.de.md` – Schritt-für-Schritt-Anleitung mit Fehlerbehebung
+- `README.md` (deutsch, kurz) und `README.en.md` (englisch)
 - `docs/TECHNICAL.de.md` – Herleitung, Zahlen, Befehle, offene Punkte
 - `docs/request-to-kcdmp.txt` – fertige Anfrage an das KCD:MP-Team
 - `tools/rtti_derive.py` – leitet RTTI-Vtables, Slots, Exporte, gEnv aus WHGame.dll ab
