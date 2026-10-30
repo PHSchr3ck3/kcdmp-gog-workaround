@@ -1,7 +1,7 @@
 KCD:MP 0.48.1 - request: support the GOG build of Kingdom Come: Deliverance II 1.5.x
 
 Date: 2026-10-30. Repository with the workaround, scripts and derivation:
-https://github.com/PHSchr3ck3/kcdmp-gog-fix
+https://github.com/PHSchr3ck3/kcdmp-gog-workaround
 
 Summary: the build gate can be passed locally with a hand-derived builds.json entry, but
 247 of the 548 anchors cannot be recovered without the original byte patterns. Hence this

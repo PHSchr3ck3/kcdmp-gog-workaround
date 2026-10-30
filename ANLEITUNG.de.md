@@ -21,8 +21,8 @@ Mod- oder Spielordner anders heißt.
 Mit Git:
 
 ```
-git clone https://github.com/PHSchr3ck3/kcdmp-gog-fix
-cd kcdmp-gog-fix
+git clone https://github.com/PHSchr3ck3/kcdmp-gog-workaround
+cd kcdmp-gog-workaround
 ```
 
 Ohne Git: auf der Repo-Seite **Code → Download ZIP**, entpacken, in den entpackten Ordner

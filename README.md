@@ -1,4 +1,4 @@
-# kcdmp-gog-fix
+# kcdmp-gog-workaround
 
 **Deutsch:** [README.de.md](README.de.md) · [Schritt-für-Schritt-Anleitung](ANLEITUNG.de.md)
 
@@ -23,8 +23,8 @@ the request with all measured data is in [`docs/request-to-kcdmp.txt`](docs/requ
 ## Install
 
 ```
-git clone https://github.com/PHSchr3ck3/kcdmp-gog-fix
-cd kcdmp-gog-fix
+git clone https://github.com/PHSchr3ck3/kcdmp-gog-workaround
+cd kcdmp-gog-workaround
 powershell -ExecutionPolicy Bypass -File .\install.ps1 -ClientDir "D:\download\KcdMp-0.48.0-win-x64"
 ```
 
