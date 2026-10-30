@@ -123,6 +123,6 @@ Sicherung alle `gog`-Einträge). Die `KcdMp_client.dll` wird nie verändert.
   `combat guard`, `hand guard`, `ui guard`, `mp rules`) sind deshalb nicht installiert.
   In den Testläufen ist nichts passiert, das Risiko bleibt aber.
 - Offizieller GOG-Support existiert nicht. Für einen vollständigen Fix siehe
-  [`docs/request-to-kcdmp.txt`](docs/request-to-kcdmp.txt).
+  [`docs/request-to-kcdmp.de.txt`](docs/request-to-kcdmp.de.txt).
 
 Technische Herleitung und Zahlen: [`docs/TECHNICAL.de.md`](docs/TECHNICAL.de.md).

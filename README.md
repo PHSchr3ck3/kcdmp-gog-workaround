@@ -106,6 +106,7 @@ The derivation scripts live in [`tools/`](tools/), the full report in
 - English: this file · German: [`README.de.md`](README.de.md) and
   [`ANLEITUNG.de.md`](ANLEITUNG.de.md)
 - [`docs/TECHNICAL.de.md`](docs/TECHNICAL.de.md), [`docs/request-to-kcdmp.txt`](docs/request-to-kcdmp.txt)
+  (English; German: [`docs/request-to-kcdmp.de.txt`](docs/request-to-kcdmp.de.txt))
 - `tools/` — read-only derivation scripts and their report
 - `CHECKSUMS.txt`, `LICENSE`, `NOTICE`
 

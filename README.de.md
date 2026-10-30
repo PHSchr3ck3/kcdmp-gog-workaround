@@ -110,7 +110,7 @@ beiden Skripten nie angefasst.
 Zeilen `build gate:`, `anchors`, `not resolved`, `gEnv`, `hooks:`. Für einen echten
 GOG-Support braucht das KCD:MP-Team einen mit `tools/sigscan/sigscan.py` erzeugten
 Eintrag für genau diese WHGame.dll; die Vorlage dafür liegt in
-`docs/request-to-kcdmp.txt`.
+`docs/request-to-kcdmp.de.txt`.
 
 ## Dateien
 
@@ -119,7 +119,7 @@ Eintrag für genau diese WHGame.dll; die Vorlage dafür liegt in
 - `ANLEITUNG.de.md` – Schritt-für-Schritt-Anleitung mit Fehlerbehebung
 - `README.md` (englisch, Startseite) und `README.de.md` (deutsch, ausführlich)
 - `docs/TECHNICAL.de.md` – Herleitung, Zahlen, Befehle, offene Punkte
-- `docs/request-to-kcdmp.txt` – fertige Anfrage an das KCD:MP-Team
+- `docs/request-to-kcdmp.de.txt` – fertige Anfrage an das KCD:MP-Team
 - `tools/rtti_derive.py` – leitet RTTI-Vtables, Slots, Exporte, gEnv aus WHGame.dll ab
 - `tools/find_genv.py` – findet `gEnv` über den CSystem-Konstruktor
 - `tools/probe_identity.py` – misst, welche Identitätsfelder der Launcher vergleicht

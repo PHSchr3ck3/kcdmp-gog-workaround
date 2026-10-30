@@ -1,42 +1,46 @@
-KCD:MP 0.48.1 – Bitte um Unterstuetzung des GOG-Builds (Kingdom Come: Deliverance II 1.5.x, GOG)
+KCD:MP 0.48.1 - request: support the GOG build of Kingdom Come: Deliverance II 1.5.x
 
-Stand 30.10.2026. Der Build-Check laesst sich lokal umgehen, aber 247 der 548 Anker
-lassen sich ohne die Original-Muster nicht belegen. Deshalb diese Anfrage.
+Date: 2026-10-30. Repository with the workaround, scripts and derivation:
+https://github.com/PHSchr3ck3/kcdmp-gog-fix
 
-1. Spiel-Build
-   WHGame.dll   sha256 c59754b925c669b26c46723eb6c19c3217aba2fac94a1ad2d8bcc229d9363870
-                size 89078272, timestamp 1782121515, size_of_image 95490048,
-                pdb_guid 4B3F7D2D4D22434DA6CA550A88ED0D8C, pdb_age 2
-                Bin\Win64MasterMasterGogPGO\WHGame.dll
+Summary: the build gate can be passed locally with a hand-derived builds.json entry, but
+247 of the 548 anchors cannot be recovered without the original byte patterns. Hence this
+request.
+
+1. Game build
+   WHGame.dll    sha256 c59754b925c669b26c46723eb6c19c3217aba2fac94a1ad2d8bcc229d9363870
+                 size 89078272, timestamp 1782121515, size_of_image 95490048,
+                 pdb_guid 4B3F7D2D4D22434DA6CA550A88ED0D8C, pdb_age 2
+                 Bin\Win64MasterMasterGogPGO\WHGame.dll
    KingdomCome.exe sha256 2e4c3189f32cc8d2a1a768eaf54754079d3ec90dac563b392dbd6cad9ea4e63b
-                size 1525760
-   Build-Info   Jun 22 2026 11:18:47, MasterMasterGogPGO, release_1_5_1308617_68
-   Store        GOG (Galaxy), Windows 11
+                 size 1525760
+   Build info    Jun 22 2026 11:18:47, MasterMasterGogPGO, release_1_5_1308617_68
+   Store         GOG (Galaxy), Windows 11
 
-2. Was der Client meldet (client.log, 0.48.1)
+2. What the client logs (client.log, 0.48.1)
    build gate: unknown game build (timestamp 1782121515, pdb 4B3F7D2D4D22434DA6CA550A88ED0D8C)
    self-test: the table of supported game builds inside the DLL holds 3 build(s)
 
-3. Was hier belegt wurde
-   - Der Launcher vergleicht Timestamp + SizeOfImage (--check-game: PDB/SHA-256 sind
-     egal). Ein Eintrag mit den obigen Werten wird als "supported" akzeptiert.
-   - Der Client liest builds.json neben KcdMp_client.dll. Ein eigener Eintrag mit
-     277 Ankern (73 rtti, 197 slot/pattern_slot/string_slot, 2 export, 4 runtime,
-     1 ctor_data/gEnv) laesst das Gate durch, der Engine-Boot laeuft
-     (gEnv 0x4917800, "matches the gEnv anchor"; 21 Hooks; Verbindung zum Server
-     und Server-Login funktionieren).
-   - Es fehlen 247 pattern-Anker (die Byte-Muster stehen nicht im Client) sowie
-     23 slot- und 1 rtti-Anker. Diese Funktionen bleiben aus.
+3. What was established here
+   - The launcher compares Timestamp + SizeOfImage (--check-game: PDB and SHA-256 are
+     ignored). An entry with the values above is accepted as "supported".
+   - The client reads builds.json next to KcdMp_client.dll. A custom entry with 277
+     anchors (73 rtti, 197 slot/pattern_slot/string_slot, 2 export, 4 runtime,
+     1 ctor_data/gEnv) passes the gate and the engine boots (gEnv 0x4917800, confirmed
+     by the client as "matches the gEnv anchor"; 21 hooks; server connection and the
+     server's login UI work).
+   - Still missing: 247 pattern anchors (the byte patterns are not stored in the client)
+     plus 23 slot anchors and 1 rtti anchor. Those features stay off.
 
-4. Bitte
-   - Bitte einen "gog"-Eintrag fuer genau diese WHGame.dll mit
-     tools/sigscan/sigscan.py erzeugen (alle 548 Anker) und in builds.json
-     aufnehmen, oder
-   - tools/sigscan/sigscan.py samt Mustern bereitstellen, damit der Eintrag hier
-     reproduzierbar erzeugt werden kann.
-   Ein Eintrag nur mit den 277 herleitbaren Ankern ist kein vollwertiger Support.
+4. Request
+   - Please generate a "gog" entry for exactly this WHGame.dll with
+     tools/sigscan/sigscan.py (all 548 anchors) and add it to builds.json, or
+   - publish tools/sigscan/sigscan.py together with the pattern data so the entry can be
+     reproduced here.
+   An entry with only the 277 derivable anchors is not full support.
 
-5. Beilage
-   tools/gog_anchors.json enthaelt alle 277 hergeleiteten Anker mit Methode und
-   Vtable/Slot; docs/TECHNICAL.de.md beschreibt die Herleitung und die offenen
-   23/247 Anker. Auf Wunsch liefere ich die vollstaendige builds.json.
+5. Attachments / evidence
+   tools/gog_anchors.json lists all 277 derived anchors with method and vtable/slot;
+   docs/TECHNICAL.de.md (German) documents the derivation and the 23/247 open anchors.
+   The full builds.json can be provided on request. No game or mod binaries are
+   redistributed; the entry was derived from a legally owned GOG copy.
